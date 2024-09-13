@@ -1,92 +1,265 @@
-### **1. Reconnaissance (Information Gathering)**
-This phase involves collecting information about the target passively or actively without engaging directly with the target’s system.
+To prepare for the **Certified Ethical Hacker (CEH)** certification, you'll need to master a variety of tools for each step of the ethical hacking process. Here's a detailed breakdown of the tools used for each topic:
 
-#### **Tools:**
+---
+
+### **1. Footprinting and Reconnaissance**
+This phase involves gathering information about the target.
+
+#### **Tools**:
 - **Nmap**: Network discovery and scanning.
-- **Netcat**: Networking utility for reading and writing data across networks.
-- **theHarvester**: Gathers emails, subdomains, hosts, and open ports.
+- **theHarvester**: Collects emails, subdomains, hosts, and employee names from public sources.
 - **Maltego**: Open-source intelligence and forensics.
-- **Recon-ng**: Web-based reconnaissance.
-- **Shodan**: IoT and network search engine.
-- **Dnsenum**: DNS enumeration.
+- **Recon-ng**: Framework for reconnaissance via APIs.
+- **Shodan**: Search engine for IoT devices.
+- **Google Dorking**: Using advanced Google search queries for information gathering.
 - **FOCA**: Metadata extraction from documents.
-- **Google Dorking**: Using Google search for hacking purposes.
-- **OSRFramework**: Framework for open-source intelligence gathering.
-- **SpiderFoot**: Automated reconnaissance.
+- **SpiderFoot**: Automated OSINT reconnaissance.
 
-### **2. Scanning and Enumeration**
-After gathering basic information, scanning and enumeration help to map the target’s network, detect open ports, services, and vulnerabilities.
+---
 
-#### **Tools:**
-- **Nmap**: Port scanning, service enumeration, and version detection.
-- **Nessus**: Vulnerability scanner.
-- **OpenVAS**: Open-source vulnerability scanner.
-- **Nikto**: Web server scanner to find vulnerabilities.
-- **Unicornscan**: Port scanning and service identification.
-- **Hping3**: Packet crafting tool for network mapping.
+### **2. Scanning Networks**
+This phase identifies open ports, services, and devices on a network.
+
+#### **Tools**:
+- **Nmap**: Network scanning and service enumeration.
 - **Netcat**: Banner grabbing and port scanning.
-- **Enum4Linux**: Enumeration of Windows machines via SMB.
-- **SMBclient**: SMB protocol enumeration.
-- **Snmpwalk**: Enumeration of SNMP (Simple Network Management Protocol) services.
-- **Masscan**: Fast port scanner for large-scale scanning.
-- **Metasploit Auxiliary Scanners**: To identify vulnerabilities in services.
+- **Unicornscan**: Asynchronous network scanning.
+- **Hping3**: Packet crafting and network testing tool.
+- **Masscan**: Fast port scanner.
+- **Angry IP Scanner**: Simple and fast network scanner.
 
-### **3. Gaining Access (Exploitation)**
-This phase is where vulnerabilities are exploited to gain access to the target system. It can involve password cracking, exploiting software vulnerabilities, or even using social engineering techniques.
+---
 
-#### **Tools:**
-- **Metasploit Framework**: The most comprehensive exploitation framework.
+### **3. Enumeration**
+This step focuses on gathering detailed information about network resources and services.
+
+#### **Tools**:
+- **Enum4Linux**: SMB enumeration tool for Windows.
+- **SNMPwalk**: Simple Network Management Protocol enumeration tool.
+- **Netcat**: Service enumeration and banner grabbing.
+- **Nessus**: Vulnerability scanner with enumeration features.
+- **Metasploit Auxiliary Scanners**: Enumeration through Metasploit modules.
+- **Smbclient**: For accessing SMB/CIFS shares.
+- **Winfo**: Tool for enumerating Windows hosts.
+
+---
+
+### **4. Vulnerability Analysis**
+Finding and assessing vulnerabilities in the target system.
+
+#### **Tools**:
+- **Nessus**: Comprehensive vulnerability scanning.
+- **OpenVAS**: Open-source vulnerability scanning.
+- **Nikto**: Web server vulnerability scanner.
+- **Burp Suite**: Web application vulnerability scanner.
+- **Acunetix**: Web vulnerability scanner.
+- **W3AF**: Web application vulnerability scanner.
+- **Metasploit Framework**: Identifies and exploits vulnerabilities.
+
+---
+
+### **5. System Hacking**
+This involves exploiting vulnerabilities to gain unauthorized access.
+
+#### **Tools**:
+- **Metasploit Framework**: Comprehensive exploitation framework.
+- **John the Ripper**: Password cracking.
+- **Hydra**: Brute-force login cracking.
+- **Mimikatz**: Extracts credentials from Windows memory.
+- **Cain & Abel**: Password recovery for Windows.
+- **Medusa**: Brute-forcing tool.
+- **Sqlmap**: SQL injection exploitation.
+
+---
+
+### **6. Malware Threats**
+Creating and analyzing malware to compromise systems.
+
+#### **Tools**:
+- **Metasploit (Meterpreter)**: Post-exploitation payload with malware capabilities.
+- **SET (Social Engineering Toolkit)**: Can create malware-infected payloads.
+- **TheFatRat**: Generates malware and backdoors.
+- **MSFVenom**: Payload generation for Metasploit.
+- **Azeroth**: Malware framework for generating backdoors.
+- **Cuckoo Sandbox**: Malware analysis sandbox.
+- **ApateDNS**: DNS manipulation for malware analysis.
+- **Pestudio**: Static malware analysis tool.
+
+---
+
+### **7. Sniffing**
+Sniffing is capturing network traffic to analyze data or credentials.
+
+#### **Tools**:
+- **Wireshark**: Network protocol analyzer.
+- **Tcpdump**: Command-line packet sniffer.
+- **Ettercap**: MITM attacks and traffic sniffing.
+- **Bettercap**: Network attacks and sniffing.
+- **Dsniff**: Sniffing passwords and other sensitive information.
+- **MITMf**: Man-in-the-middle attack framework.
+- **Snort**: Network intrusion detection system that can be used for sniffing.
+
+---
+
+### **8. Social Engineering**
+Manipulating people to gain unauthorized access to systems or data.
+
+#### **Tools**:
+- **Social Engineering Toolkit (SET)**: Framework for phishing and social engineering attacks.
+- **Gophish**: Phishing campaign tool.
+- **BeEF (Browser Exploitation Framework)**: Exploits browser vulnerabilities through social engineering.
+- **King Phisher**: Phishing campaign toolkit.
+- **Maltego**: OSINT gathering tool used in social engineering.
+- **Evilginx2**: Advanced phishing and session hijacking tool.
+
+---
+
+### **9. Denial-of-Service (DoS)**
+Attacks aimed at overwhelming services and making them unavailable.
+
+#### **Tools**:
+- **Low Orbit Ion Cannon (LOIC)**: DoS attack tool.
+- **High Orbit Ion Cannon (HOIC)**: Advanced version of LOIC for DDoS.
+- **Hping3**: Crafting packets for DoS.
+- **GoldenEye**: HTTP DoS tool.
+- **Slowloris**: Keeps connections open to exhaust server resources.
+- **Torshammer**: Slow POST DoS tool.
+- **UFONet**: DDoS tool using open redirect vectors.
+
+---
+
+### **10. Session Hijacking**
+Taking over a legitimate session to gain unauthorized access.
+
+#### **Tools**:
+- **Wireshark**: Packet analysis to capture session tokens.
+- **Ettercap**: MITM tool that can hijack sessions.
+- **Burp Suite**: Allows session manipulation in web applications.
+- **Hamster and Ferret**: Session hijacking tools.
+- **Cookie Cadger**: Tool for session hijacking via HTTP cookies.
+- **MITMf**: Man-in-the-middle framework that can hijack sessions.
+
+---
+
+### **11. Evading IDS, Firewalls, and Honeypots**
+Bypassing security measures designed to detect or prevent attacks.
+
+#### **Tools**:
+- **Nmap (with Stealth Scan)**: Evades firewalls and intrusion detection.
+- **Metasploit Evasion Modules**: To bypass IDS/IPS systems.
+- **Fragroute**: Tool for packet fragmentation to evade IDS.
+- **Snort (in IDS mode)**: Can be used to test evasion techniques.
+- **Scapy**: Packet crafting to evade detection.
+- **WafW00f**: Identifies and bypasses web application firewalls.
+- **Burp Suite Pro**: With evasion techniques for WAF bypass.
+
+---
+
+### **12. Hacking Web Servers**
+Exploiting web servers and their configurations.
+
+#### **Tools**:
+- **Nikto**: Web server vulnerability scanning.
+- **Metasploit**: Exploits for known web server vulnerabilities.
+- **W3AF**: Web application attack and audit framework.
+- **Nessus**: Web server vulnerability scanning.
+- **OpenVAS**: Vulnerability scanning for web servers.
+- **Burp Suite**: Testing for web server vulnerabilities.
+
+---
+
+### **13. Hacking Web Applications**
+Exploiting web application vulnerabilities like XSS, CSRF, etc.
+
+#### **Tools**:
+- **Burp Suite**: Comprehensive web app vulnerability scanner.
+- **OWASP ZAP**: Open-source web application scanner.
+- **Sqlmap**: Automated SQL injection and database takeover.
+- **W3AF**: Web application attack framework.
+- **BeEF (Browser Exploitation Framework)**: Exploits browser vulnerabilities.
+- **Nikto**: Web vulnerability scanning.
+- **Fiddler**: HTTP proxy used for web app testing.
+
+---
+
+### **14. SQL Injection**
+Exploiting SQL vulnerabilities in web applications to manipulate databases.
+
+#### **Tools**:
 - **Sqlmap**: Automated SQL injection tool.
-- **Hydra**: Password brute-forcing.
-- **John the Ripper**: Password cracking for hash types.
-- **Medusa**: Brute-force login attack tool.
-- **BeEF (Browser Exploitation Framework)**: Focused on browser vulnerabilities.
-- **Social Engineering Toolkit (SET)**: Social engineering attacks, including phishing.
-- **Aircrack-ng**: Wi-Fi cracking and network security testing.
-- **Mimikatz**: Extracts credentials from memory on Windows.
-- **Exploit-db**: Database for publicly available exploits.
-- **THC-Hydra**: Parallelized login cracker for various protocols.
-- **Ettercap**: Man-in-the-middle attacks.
-- **Responder**: LLMNR, NBT-NS, and MDNS poisoning tool.
+- **Havij**: GUI-based SQL injection tool.
+- **BBQSQL**: Blind SQL injection framework.
+- **jSQL Injection**: Java-based SQL injection tool.
+- **NoSQLMap**: NoSQL injection and automated exploit tool.
 
-### **4. Maintaining Access**
-Once access is obtained, the goal is to maintain persistence within the system. This is achieved by installing backdoors or using other methods to ensure continued access.
+---
 
-#### **Tools:**
-- **Metasploit Meterpreter**: Meterpreter is a payload for maintaining access and performing post-exploitation tasks.
-- **Netcat**: Can be used as a backdoor for maintaining access.
-- **Empire**: Post-exploitation agent for maintaining access.
-- **Weevely**: Web shell tool for backdoor access.
-- **Mimikatz**: For credential dumping and persistence.
-- **Cobalt Strike**: Tool for adversary simulation and persistence.
-- **SSH Tunnels**: For persistent access.
-- **Nc Reverse Shells**: Reverse shells to maintain a connection to a victim’s system.
-- **Crontab**: Schedule backdoors on Linux systems.
-- **Task Scheduler (Windows)**: Schedules tasks for persistence on Windows systems.
+### **15. Hacking Wireless Networks**
+Breaking into wireless networks using vulnerabilities in wireless encryption protocols.
 
-### **5. Covering Tracks**
-After the exploitation and maintaining access, ethical hackers must ensure they erase all footprints to avoid detection. This step ensures logs and tracks are cleaned up to leave no trace.
+#### **Tools**:
+- **Aircrack-ng**: Suite for Wi-Fi cracking.
+- **Wifite**: Automated wireless cracking tool.
+- **Kismet**: Wireless network detector and sniffer.
+- **Reaver**: Cracks WPA/WPA2 using WPS.
+- **Fern Wi-Fi Cracker**: GUI-based wireless security auditing tool.
+- **Wireshark**: Captures and analyzes wireless traffic.
+- **Cowpatty**: WPA/WPA2 PSK cracking tool.
 
-#### **Tools:**
-- **Metasploit**: Contains tools to clean logs and clear command history.
-- **Clear Logs in Linux (bash history, auth.log)**: Command to remove historical traces.
-- **Shred**: Securely deletes files to prevent recovery in Linux.
-- **Timestomp**: Part of Metasploit to change file timestamps.
-- **Auditpol**: Tool to manage auditing policies on Windows.
-- **Logclear (Meterpreter)**: Clears event logs via Metasploit.
-- **History command**: Used to erase bash history in Linux.
-- **Cloakify**: Encoding tool that allows data to blend into regular traffic to avoid detection.
-- **Invoke-Obfuscation (PowerShell)**: Obfuscates PowerShell scripts to avoid detection.
-- **Chainsaw**: A tool to detect and parse log manipulation.
+---
 
-### **Reporting**
-While not officially part of the CEH phases, reporting is an important post-attack step where you document findings, vulnerabilities, and recommendations for mitigation.
+### **16. Hacking Mobile Platforms**
+Targeting mobile devices through various vulnerabilities.
 
-#### **Tools:**
-- **Dradis**: Information sharing platform for security assessments.
-- **KeepNote**: Note-taking tool for pen testing documentation.
-- **Faraday**: Collaborative penetration testing IDE.
-- **MagicTree**: Tool to manage penetration testing data.
-- **CherryTree**: Hierarchical note-taking application for organizing findings.
+#### **Tools**:
+- **Drozer**: Android security testing framework.
+- **APKTool**: Reverse engineering APKs.
+- **Androguard**: Reverse engineering Android applications.
+- **Frida**: Dynamic instrumentation toolkit for mobile apps.
+- **MobSF**: Automated mobile security framework for Android and iOS.
+- **Xposed Framework**: Android app manipulation.
+
+---
+
+### **17. IoT Hacking**
+Exploiting vulnerabilities in Internet of Things (IoT) devices.
+
+#### **Tools**:
+- **Shodan**: Search engine for finding vulnerable IoT devices.
+- **Nmap**: Network mapping and port scanning for IoT devices.
+- **Firmware Mod Kit**: Extracting and modifying firmware from IoT devices.
+- **Wireshark**: Sniffing traffic between IoT devices.
+- **RouterSploit**: Exploiting vulnerabilities in IoT devices
+
+.
+- **Firmalyzer**: Firmware analysis for IoT.
+
+---
+
+### **18. Cloud Computing**
+Exploiting cloud infrastructures or misconfigurations.
+
+#### **Tools**:
+- **ScoutSuite**: Cloud vulnerability scanning.
+- **CloudSploit**: Scanning cloud environments for misconfigurations.
+- **Prowler**: AWS security tool.
+- **Pacu**: AWS exploitation framework.
+- **AQUA Security**: Container and cloud-native security.
+- **Kubebench**: Kubernetes security benchmarking.
+
+---
+
+### **19. Cryptography**
+Breaking or manipulating encryption mechanisms.
+
+#### **Tools**:
+- **John the Ripper**: Cracks hashed passwords.
+- **Hashcat**: Password cracking with GPU acceleration.
+- **Cain & Abel**: Password recovery and cracking.
+- **Aircrack-ng**: Cracking wireless encryption (WEP, WPA).
+- **openssl**: Cryptography toolkit for encryption, decryption, and certificates.
+- **Gpg4win**: Windows-based encryption toolkit.
   
-By mastering these tools and how they fit within each of the five phases of hacking, you'll be well-prepared for the CEH certification and practical penetration testing.
+--- 
+
+Each of these tools is critical in developing the skills and knowledge needed to successfully pass the **CEH certification** and become a proficient ethical hacker.
